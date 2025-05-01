@@ -153,25 +153,61 @@ footer p{
 .dark p{
     padding-bottom: 20px;
 }
-.quote{
-    align-content: center;
-    padding-left: 100px;
-    /* position: relative; */
-}
-.quote input{
-    width: 200px;
-    height: 20px;
-    border: 0;
-}
-.quote textarea{
-    width: 200px;
-    height: 40px;
-    border: 0;
-}
-.button_1 {
-    height: 10vh;
-    /* position: absolute; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+  .quote {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .quote div {
+    margin-bottom: 20px;
+  }
+
+  .quote label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+  }
+
+  .quote input,
+  .quote textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    box-sizing: border-box;
+  }
+
+  .quote input:focus,
+  .quote textarea:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+
+  .quote textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+
+  .button_1 {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .button_1:hover {
+    background-color: #0056b3;
+  }
+
